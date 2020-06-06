@@ -18,9 +18,20 @@ export default class Navbar extends Component {
                 <Link to="/">
                     <img src={logo} alt="Beach Resort Logo"/>
                 </Link>
-                <button type="button" className="nav-btn"></button>
+                <button type="button" className="nav-btn">
+                    <FaAlignRight className="nav-icon"></FaAlignRight>
+                </button>
+
             </div>
         </div>
     </nav>
+    <ul className={this.state.isOpen?"nav-links show-nav":"nav-links"}>
+        <li>
+            <Link to="/">Home</Link>
+        </li>
+        <li>
+            <Link to="/rooms">Rooms</Link>
+        </li>
+    </ul>
   }
 }
