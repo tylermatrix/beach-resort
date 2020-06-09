@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
-
+//services has data in state. Must look into this a bit more, not sure why it is so important
 export default class Services extends Component {
   state = {
     services: [

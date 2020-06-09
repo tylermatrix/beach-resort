@@ -17,6 +17,7 @@ export default function Home() {
           our rooms
         </Link>
       </Hero>
+      //implmenting services component
       <Services></Services>
       <FeaturedRooms></FeaturedRooms>
     </>
