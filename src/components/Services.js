@@ -1,42 +1,41 @@
 import React, { Component } from "react";
-import Title from "./Title";
 import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
-//services has data in state. Must look into this a bit more, not sure why it is so important
+import Title from "./Title";
 export default class Services extends Component {
   state = {
     services: [
       {
         icon: <FaCocktail />,
-        title: "Free Cocktails",
+        title: "free cocktails",
         info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, similique? ",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!"
       },
       {
         icon: <FaHiking />,
         title: "Endless Hiking",
         info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, similique? ",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!"
       },
       {
         icon: <FaShuttleVan />,
-        title: "Free Shuttle",
+        title: "Free shuttle",
         info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, similique? ",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!"
       },
       {
         icon: <FaBeer />,
         title: "Strongest Beer",
         info:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, similique? ",
-      },
-    ],
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corporis!"
+      }
+    ]
   };
   render() {
     return (
       <section className="services">
         <Title title="services" />
         <div className="services-center">
-          {This.state.services.map((item, index) => {
+          {this.state.services.map((item, index) => {
             return (
               <article key={index} className="service">
                 <span>{item.icon}</span>
